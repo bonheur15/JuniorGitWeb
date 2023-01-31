@@ -146,8 +146,8 @@ var web_config = {
     "api_url":"https://demoservertesting.tk/igiti/API/",
     // "api_url":"http://localhost/api/dev/",
     "media_url":"https://demoservertesting.tk/igiti/domains/st28913.ispot.cc/public_html/stream/videos/",
-    "ads_url":"https://g3b0l6s3.tinifycdn.com/igiti/domains/st28913.ispot.cc/public_html/stream/thumbnails/",
-    "thumbnail_url":"https://g3b0l6s3.tinifycdn.com/igiti/domains/st28913.ispot.cc/public_html/stream/thumbnails/"
+    "ads_url":"https://demoservertesting.tk/igiti/domains/st28913.ispot.cc/public_html/stream/thumbnails/",
+    "thumbnail_url":"https://demoservertesting.tk/igiti/domains/st28913.ispot.cc/public_html/stream/thumbnails/"
 }
 
 
