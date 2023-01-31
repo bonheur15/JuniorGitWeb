@@ -1,0 +1,351 @@
+#video-section {
+   width: 100%;
+   
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   flex-direction: column;
+   margin-top: 30px;
+   margin-bottom: 30px;
+   margin-left: auto;
+   margin-right: auto;
+}
+#download-btn{
+   padding: 10px 30px;
+   width: fit-content;
+   height: fit-content;
+   margin: 0 0 auto auto;
+   background-color: var(--theme-rose);
+   color: white;border-radius: 50px;
+   font-weight: bold;
+   cursor: pointer;
+   position: absolute;
+   /* left: 70%;
+   transform: translateX(50%) translateY(calc(-100% - 10px));
+   top: 10%; */
+   top: 10px;
+   right: 10px;
+
+}
+#side-left{
+   width: 12%;
+   border-radius: 20px;
+   height: 80%;
+   margin-top: auto;
+   margin-bottom: auto;
+   /* background-color: beige; */
+   position: absolute;
+   left: 10px;
+   top: 0;
+   bottom: 0;
+   display: flex;
+}
+#side-left img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   margin: auto;
+   object-position: -10% 0;
+   animation-duration: 7s;
+   animation-name: side-ads-flow;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+}
+
+@keyframes side-ads-flow {
+   0%{
+      object-position: 0%;
+   }
+   50%{
+      object-position: 100%;
+   }
+   100%{
+      object-position: 0%;
+   }
+}
+@keyframes side-ads-flow-down {
+   0%{
+      object-position: 0% 0%;
+   }
+   50%{
+      object-position: 0% 100%;
+   }
+   100%{
+      object-position: 0% 0%;
+   }
+}
+#side-right{
+   width: 12%;
+   border-radius: 20px;
+   height: 80%;
+   margin-top: auto;
+   margin-bottom: auto;
+   background-color: beige;
+   position: absolute;
+   right: 10px;
+   top: 0;
+   bottom: 0;
+}
+#side-right img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   margin: auto;
+   object-position: 0 0;
+   animation-duration: 7s;
+   animation-direction: reverse;
+   animation-timing-function: linear;
+   animation-name: side-ads-flow;
+   animation-iteration-count: infinite;
+}
+#center-down img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   margin: auto;
+   object-position: 0 0;
+   animation-duration: 20s;
+   /* animation-timing-function: linear; */
+   animation-name: side-ads-flow-down;
+   animation-iteration-count: infinite;
+}
+
+#center-down{
+   height: 100px;
+   width: 80%;
+   position: fixed;
+   bottom: 10px;
+   left: 0;
+   right: 0;
+   margin-left: auto;
+
+   margin-right: auto;
+   /* background-color: white; */
+}
+
+#center-center{
+   width: 50%;
+   height: 70%;
+   position: absolute;
+   margin: auto;
+   z-index: 999;
+   margin-right: auto;
+   /* background-color: white; */
+}
+#center-center img{
+   width: 100%;
+   height: 90%;
+   object-fit: contain;
+   margin: auto;
+}
+#center-center #outcolse-counter{
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   margin: 0 auto 0 auto;
+   color: white;
+   text-align: center;
+}
+#video-section video {
+   margin: auto;
+   max-height: 100vh;
+   object-fit: cover;
+   object-position: top;
+}
+
+
+@media (max-width: 991px) {
+   header .nav-fixed {
+      position: relative;
+   }
+}
+
+#site-header {
+   position: relative;
+   position: relative;
+}
+
+.video-js {
+   width: 70%;
+   height: 80%;
+   margin: auto;
+   /* position: absolute; */
+   inset: 0;
+}
+
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before {
+   content: "";
+   background-image: url('https://pngimage.net/wp-content/uploads/2018/06/svt-png-9.png');
+   background-repeat: no-repeat;
+   background-size: 30px;
+   background-position: 55% calc(50% - 0px);
+   border: none !important;
+   box-shadow: none !important;
+}
+
+.video-js .vjs-big-play-button {
+   border-radius: 100%;
+   width: 80px;
+   height: 80px;
+
+}
+
+#banner {
+   width: 100%;
+   height: 100%;
+   /* background-color: black; */
+   z-index: 999;
+   display: flex;
+   transition: 500ms;
+
+   flex-direction: column;
+}
+
+#banner img {
+   width: fit-content;
+   height: fit-content;
+   margin: auto;
+   border-radius: 20px;
+   transition: 500ms;
+
+}
+
+.show {
+   transform: translateY(0px);
+   transition: 500ms;
+
+}
+
+.hide {
+   transform: translateY(-200%);
+   transition: 500ms;
+   position: fixed;
+}
+
+#close-btn {
+   width: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 40px;
+   margin: auto auto 0 auto;
+   background-color: red;
+   color: white;
+   cursor: pointer;
+   border-radius: 100%;
+   transition: 500ms;
+
+}
+
+
+.vjs-matrix.video-js {
+   color: var(--theme-rose);
+}
+
+/* Change the border of the big play button. */
+.vjs-matrix .vjs-big-play-button {
+   border-color: var(--theme-rose);
+}
+
+/* Change the color of various "bars". */
+.vjs-matrix .vjs-volume-level,
+.vjs-matrix .vjs-play-progress,
+.vjs-matrix .vjs-slider-bar {
+   background: var(--theme-rose);
+}
+
+
+
+
+.video-js.vjs-vjsdownload .vjs-button.vjs-vjsdownload {
+   cursor: pointer;
+   display: block;
+   font-family: VideoJs
+}
+
+.video-js.vjs-vjsdownload .vjs-button.vjs-vjsdownload:before {
+   display: block;
+   position: relative;
+   top: 4px;
+   content: '\f101';
+   transform: rotate(90deg);
+   font-size: 1.5em
+}
+
+.video-js.vjs-vjsdownload .vjs-button.vjs-vjsdownload:after {
+   display: block;
+   content: ' ';
+   width: 4px;
+   height: 5px;
+   background-color: white;
+   position: relative;
+   top: -11px;
+   left: calc(50% - 2px)
+}
+
+
+#series-section{
+   width: 100%;
+   padding: 10px 0;
+   /* background-color: aqua; */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+#series-section #season-choose{
+   width: 100%;
+   height: fit-content;
+   margin: auto;
+   /* background-color: black; */
+}
+#series-section #season-choose select{
+   margin-left: 30px;
+   border-radius: 5px;
+}
+#series-section #episodes-container{
+   width: 100%;
+   height: fit-content;
+   display: flex;
+   margin-top: 10px;
+   /* background-color: black; */
+   flex-wrap: wrap;
+}
+#series-section #episodes-container .episode{
+   width: fit-content;
+   height: fit-content;
+   padding: 5px 40px;
+   background-color: var(--theme-rose);
+   color: white;
+   border-radius: 40px;
+   margin: 10px;
+   cursor: pointer;
+}
+#series-section #episodes-container .active{
+   background-color: rgb(197, 197, 197);
+   color: var(--theme-rose);
+}
+
+
+ 
+ .selectdiv {
+   width: 268px;
+   padding: 5px;
+   font-size: 16px;
+   line-height: 1;
+   border: 0;
+   text-align: center;
+   border-radius: 5px;
+   height: 34px;
+   background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #ddd;
+   -webkit-appearance: none;
+   background-position-x: 244px;
+ }
+
+/* 
+.videoPlayerHide ::-webkit-media-controls {
+   display:none !important;
+ } */

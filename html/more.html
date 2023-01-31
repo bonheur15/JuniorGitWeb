@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title> Junior Giti</title>
+	<meta name="keywords" content="movie,streaming,films,agasobanuye,igiti,junior giti,Zisobanuye,Kubuntu,Movie tree">
+	<meta name="description" content="The Free movie tree, Film zisobanuye kubuntu">
+	<meta name="page-topic" content="Media">
+	<meta name="page-type" content="Movie">
+	<meta name="audience" content="Everyone">
+	<link rel="stylesheet" href="assets/css/style-starter.css">
+	<link href="//fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,600&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<!-- header -->
+	<div id="loader" class="showLoader">
+		<div id="logo-frame">
+			<img src="./assets/icons/logo2.png" alt="">
+		</div>
+	</div>
+	<!-- <div id="viwers">Online: 0</div> -->
+	<header id="site-header" class="w3l-header fixed-top">
+		<nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-3">
+			<div class="container">
+
+				<a class="navbar-brand" href="/" style="display: flex;">
+					<div id="img-logo-container">
+						<img src="./assets/icons/logo2.png" style="width: 100%;height: auto;" />
+					</div>
+					<div style="display: flex;align-items: center;margin-left: 10px;">IGITI.NET</div>
+				</a>
+
+
+				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="fa icon-expand fa-bars"></span>
+					<span class="fa icon-close fa-times"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item ">
+							<a class="nav-link" href="/">Home</a>
+						</li>
+						<!-- <li class="nav-item">
+							<a class="nav-link" href="about">About</a>
+						</li> -->
+						<li class="nav-item active">
+							<a class="nav-link" href="more">List</a>
+						</li>
+
+
+					</ul>
+					<a href="app" id="downloadbtn" download="Igiti_8_0.0.apk" class="btn btn-primary" style="color: white;">Download App</a>
+					<script>
+						if(Website2APK != undefined){
+							document.getElementById("downloadbtn").style.display="none";
+						}
+					</script>
+
+
+					<div class="search-right">
+						<a href="#search" class="btn search-hny mr-lg-3 mt-lg-0 mt-4" title="search">Search <span
+								class="fa fa-search ml-3" aria-hidden="true"></span></a>
+						<div id="search" class="pop-overlay">
+							<div class="popup">
+								<form action="more" method="get" class="search-box">
+									<input type="search" placeholder="Search your Keyword" name="search"
+										required="required" autofocus="">
+									<button type="submit" class="btn"><span class="fa fa-search"
+											aria-hidden="true"></span></button>
+								</form>
+								<div class="browse-items">
+									<h3 class="hny-title two mt-md-5 mt-4">Browse all:</h3>
+									<ul class="search-items">
+										<li><a href="more?search=Action">Action</a></li>
+										<li><a href="more?search=Drama">Drama</a></li>
+										<li><a href="more?search=Family">Family</a></li>
+										<li><a href="more?search=Thriller">Thriller</a></li>
+										<li><a href="more?search=Comedy">Commedy</a></li>
+										<li><a href="more?search=Romantic">Romantic</a></li>
+										<li><a href="more?search=Series">Series</a></li>
+										<li><a href="more?search=Horror">Horror</a></li>
+									</ul>
+								</div>
+							</div>
+							<a class="close" href="#close">×</a>
+						</div>
+					</div>
+
+
+				</div>
+				<!-- toggle switch for light and dark theme -->
+				<div class="mobile-position">
+					<nav class="navigation">
+						<div class="theme-switch-wrapper">
+							<label class="theme-switch" for="checkbox">
+								<input type="checkbox" id="checkbox">
+								<div class="mode-container">
+									<i class="gg-sun"></i>
+									<i class="gg-moon"></i>
+								</div>
+							</label>
+						</div>
+					</nav>
+				</div>
+				<!-- //toggle switch for light and dark theme -->
+			</div>
+		</nav>
+		<!--//nav-->
+	</header>
+
+
+
+	<section class="w3l-grids">
+		<div class="grids-main py-5">
+			<div class="container py-lg-4">
+				<div class="headerhny-title" id="spacer1">
+					<div class="w3l-title-grids">
+
+					</div>
+				</div>
+				<div class="w3l-populohny-grids" id="list-container">
+
+
+				</div>
+			</div>
+
+			<div class="button-center text-center mt-3">
+				<a href="#" class="btn view-button">View More <span class="fa fa-angle-double-right ml-2"
+						aria-hidden="true"></span></a>
+			</div>
+
+		</div>
+		
+	</section>
+
+	<footer class="w3l-footer">
+		<section class="footer-inner-main">
+			<div class="below-section">
+				<div class="container">
+					<div class="copyright-footer">
+						<div class="columns text-lg-left">
+							<p>&copy;  Created by BLG.</p>
+						</div>
+
+						<ul class="social text-lg-right">
+							<!-- <li><a href="https://www.instagram.com/junior_giti/"><span class="fa fa-instagram" aria-hidden="true"></span></a>
+							</li> -->
+
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- copyright -->
+			<!-- move top -->
+			<button onclick="topFunction()" id="movetop" title="Go to top">
+				<span class="fa fa-arrow-up" aria-hidden="true"></span>
+			</button>
+
+			<!-- /move top -->
+
+		</section>
+	</footer>
+	<!--//footer-66 -->
+</body>
+
+</html>
+
+<script src="https://cdn.socket.io/socket.io-3.0.1.min.js"></script>
+<script src="assets/js/frameworks.min.js"></script>
+<script src="assets/js/common.js"></script>
+<script src="./assets/js/more.js"></script>
